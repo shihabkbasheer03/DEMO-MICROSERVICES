@@ -2,12 +2,12 @@ apiVersion: v1
 kind: Service
 metadata:
   name: redis
-  labels:  # changed 'label' to 'labels'
+  labels: 
     name: redis-service
     app: demo-voting-app
 spec:
   ports:
     - port: 6379
-      targetPort: 6379  # changed 'targetport' to 'targetPort'
+      targetPort: 6379 
   selector:
-    app: demo-voting-app  # usually 'selector' matches labels, adjusted to focus on 'app'
+    app: demo-voting-app 

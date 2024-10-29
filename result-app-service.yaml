@@ -2,14 +2,14 @@ apiVersion: v1
 kind: Service
 metadata:
   name: result-service
-  labels:  # changed 'label' to 'labels'
+  labels:  
     name: result-service
     app: demo-voting-app
 spec:
   type: NodePort
   ports:
     - port: 80
-      targetPort: 80  # changed 'targetport' to 'targetPort'
-      nodePort: 30005  # changed 'NodePort' to 'nodePort'
+      targetPort: 80  
+      nodePort: 30005 
   selector:
-    app: demo-voting-app  # typically selectors use labels, simplified here
+    app: demo-voting-app  

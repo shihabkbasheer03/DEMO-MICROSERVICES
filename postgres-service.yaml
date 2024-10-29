@@ -2,12 +2,12 @@ apiVersion: v1
 kind: Service
 metadata:
   name: db
-  labels:  # changed 'label' to 'labels'
+  labels: 
     name: postgres-service
     app: demo-voting-app
 spec:
   ports:
     - port: 5432
-      targetPort: 5432  # changed 'targetport' to 'targetPort'
+      targetPort: 5432  
   selector:
-    app: demo-voting-app  # usually, selectors use labels to match with the app label
+    app: demo-voting-app  
